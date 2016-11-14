@@ -21,6 +21,7 @@ In addition this project will include:
 The game will have an opening screen that will allow the user to start the game or click a how to play button to be taken to a how to play screen. There will be an icon on the side to turn the sound off.
 
 ![wireframes](https://github.com/ygu93/ztype/blob/master/readme-image/wireframe.png)
+![game](https://github.com/ygu93/ztype/blob/master/readme-image/game.png)
 
 
 ### Architecture and technologies
