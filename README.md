@@ -32,9 +32,11 @@ The game will have an opening screen that will allow the user to start the game 
 
 There will be a game.js file that will handle the logic of the game such as removing a letter off an asteroid and destroying the asteroids.
 
-There will be classes for bullets, asteroid and ship as well.
+There will be classes for bullets, asteroid and ship as well. A bullet class is used for a visual effect of typing a correct word, no code is really needed other than drawing the bullet.
 
 An Asteroid will have a word assigned to it. When a user begins to type a word the current asteroid is set and the user must make the asteroid's name property to be empty in order to destroy it.
+
+Words will be generated via a word hash, with each key of the hash being a letter of the alphabet. Only one word with that letter can be part of the wave, no two words will begin with the same letter. A word is locked on if there is no currentWord set and the letter you type is the first letter of one of the asteroids. A user cannot switch words once it has locked on. The user must finish typing the word to move onto another word. A user loses when the asteroid which is a on a fixed collision course with the ship, reaches the ship. 
 
 
 ### Implementation Timeline
