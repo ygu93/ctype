@@ -8,19 +8,19 @@ z-type is an online web typing game. It has a very similar interface to asteroid
 
 With this clone of ztype, users will be able to:
 
-- [] Start and pause the game as well as the background music
-- [] Type words to destroy asteroids
-- [] Be able to see their score at the end of the game
-- [] Be able to use a bomb to wipe all the current asteroids on the screen.
+- Start and pause the game as well as the background music
+-  Type words to destroy asteroids
+-  Be able to see their score at the end of the game
+-  Be able to use a bomb to wipe all the current asteroids on the screen.
 
 In addition this project will include:
-- [] a production readme
+-  a production readme
 
 ### Wireframes
 
 The game will have an opening screen that will allow the user to start the game or click a how to play button to be taken to a how to play screen. There will be an icon on the side to turn the sound off.
 
-![wireframes](https://github.com/ygu93/ztype/readme-image/wireframe.png)
+![wireframes](https://github.com/ygu93/ztype/blob/master/readme-image/wireframe.png)
 
 
 ### Architecture and technologies
