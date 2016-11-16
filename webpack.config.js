@@ -2,10 +2,9 @@ const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './lib/ztype.jsx',
+  entry: './lib/ztype.js',
   output: {
-    path: path.join(__dirname, 'app', 'assets', 'javascripts'),
-    filename: 'bundle.js'
+    filename: './lib/bundle.js'
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
@@ -17,7 +16,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['es2015']
         }
       }
     ]
