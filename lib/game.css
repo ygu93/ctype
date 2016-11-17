@@ -1,0 +1,83 @@
+#main-menu{
+  height:720px;
+  width: 480px;
+  background-image: url('http://hd4wallpapers.net/wp-content/uploads/2016/01/Space-Wallpaper-Hd-Portrait.jpg');
+  background-size: cover;
+  z-index: -1;
+  margin: 0px auto;
+  color: white;
+}
+
+#how-to-play{
+  height:720px;
+  width: 480px;
+  background-image: url('http://hd4wallpapers.net/wp-content/uploads/2016/01/Space-Wallpaper-Hd-Portrait.jpg');
+  background-size: cover;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+#how-to-play img{
+  border: 1px solid white;
+  height: 300px;
+}
+
+#how-to-play p{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+#how-to-play h2{
+  margin-top: 0px;
+}
+
+#back{
+  cursor: pointer;
+}
+
+#back:hover{
+  color:orange;
+}
+
+#main-menu h1{
+  text-align: center;
+  font-size: 140px;
+  font-family: sans-serif;
+  margin-top: 0px;
+}
+
+#new-game{
+  color:white;
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#instructions{
+  color:white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#new-game:hover{
+  color: orange;
+}
+
+#instructions:hover{
+  color:orange;
+}
+
+
+
+.new-wrapper{
+  text-align: center;
+  margin-top: 300px;
+}

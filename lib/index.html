@@ -5,15 +5,52 @@
     <title>ztype</title>
     <script src="keymaster.js"></script>
     <script type="text/javascript" src="bundle.js"> </script>
+    <link rel="stylesheet" type="text/css" href="game.css" media="screen" />
     </script>
   </head>
   <body>
+    <audio src='../sounds/bg-music.mp3' loop=true autoplay></audio>
+    <div id='main-menu'>
+      <h1>ZTYPE</h1>
+      <div class='new-wrapper'>
+      <span id="new-game">New Game</span>
+      <p id="instructions">How to Play</p>
+      </div>
+    </div>
+    <section id='how-to-play' style="display:none">
+      <h2> How to Play</h2>
+      <p>
+        <img src="../images/shoot-text.png"/>
+        <br/>
+        Type the words to shoot the asteroids
+      </p>
+      <p>
+        Press Enter to use an EMP to wipe out all asteroids on the map. You only have three, use them wisely.
+      </p>
+      <p>
+        <span id="back">Back</span>
+      </p>
+    </section>
+    <div align="center">
     <canvas id="game-canvas" width="480" height="720">
-    <div style="display:none;">
-  <img id="ship" src="http://i.stack.imgur.com/rsH6n.png">
-</div>
+    </div>
+    <div style="display:none">
+      <img id="ship" src="http://i.stack.imgur.com/rsH6n.png">
+    </div>
   <div style="display:none;">
     <img id="background" src="http://hd4wallpapers.net/wp-content/uploads/2016/01/Space-Wallpaper-Hd-Portrait.jpg">
+  </div>
+
+  <div style="display:none;">
+    <img id="bullet" src="../sprites/gunshot.png">
+  </div>
+
+  <div style="display:none;">
+    <img id="asteroid" src="../sprites/asteroid.png">
+  </div>
+
+  <div style="display:none;">
+    <img id="explosion" src="../sprites/explosion.png">
   </div>
   </body>
 </html>
