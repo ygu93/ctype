@@ -1,6 +1,11 @@
 *{
   font-family: sans-serif;
 }
+
+body{
+  background-image: url("../images/pagebg.jpg");
+  background-size: cover;
+}
 #main-menu{
   height:620px;
   width: 480px;
@@ -161,4 +166,9 @@
 .new-wrapper{
   text-align: center;
   margin-top: 300px;
+}
+
+#page-bg{
+  z-index: -100;
+  width: 100%;
 }
