@@ -2,25 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>ztype</title>
+    <title>ctype</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="keymaster.js"></script>
     <script type="text/javascript" src="bundle.js"> </script>
     <link rel="stylesheet" type="text/css" href="game.css" media="screen" />
     </script>
   </head>
   <body>
-    <audio src='../sounds/bg-music.mp3' loop=true autoplay></audio>
+    <audio id='bg-music' src='../sounds/bg-music.mp3' loop=true autoplay></audio>
     <div id='main-menu'>
-      <h1>ZTYPE</h1>
+      <h1>CTYPE</h1>
       <div class='new-wrapper'>
       <span id="new-game">New Game</span>
       <p id="instructions">How to Play</p>
       </div>
+      <img id='audio-on' src="../sprites/audioOn.png"/>
+      <img id='audio-off' src="../sprites/audioOff.png" style="display:none"/>
     </div>
-    <section id='how-to-play' style="display:none">
+    <div id='how-to-play' style="display:none">
       <h2> How to Play</h2>
       <p>
-        <img src="../images/shoot-text.png"/>
+        <img id="play1"src="../images/shoot-text.png"/>
         <br/>
         Type the words to shoot the asteroids
       </p>
@@ -28,11 +31,16 @@
         Press Enter to use an EMP to wipe out all asteroids on the map. You only have three, use them wisely.
       </p>
       <p>
+      </p>
+      <img id='audio-on2' src="../sprites/audioOn.png"/>
+      <img id='audio-off2' src="../sprites/audioOff.png" style="display:none"/>
+      <p>
         <span id="back">Back</span>
       </p>
-    </section>
-    <div align="center">
-    <canvas id="game-canvas" width="480" height="720">
+    </div>
+    <div align="center" style="display:none" id='canvas-wrapper'>
+    <canvas id="game-canvas" width="480" height="620"/>
+      <img id="asdf" src="../images/space.gif">
     </div>
     <div style="display:none">
       <img id="ship" src="http://i.stack.imgur.com/rsH6n.png">
@@ -51,6 +59,19 @@
 
   <div style="display:none;">
     <img id="explosion" src="../sprites/explosion.png">
+  </div>
+  <div id="game-over-wrapper" style="display:none">
+    <h2>Game Over</h2>
+  <ul id="game-over">
+  </ul>
+  <div class='game-over-buttons'>
+    <p>
+      <span id="restart">Restart</span>
+    </p>
+    <p>
+      <span id="back-to-home">Main Menu</span>
+    </p>
+  </div>
   </div>
   </body>
 </html>

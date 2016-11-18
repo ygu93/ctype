@@ -1,24 +1,40 @@
+*{
+  font-family: sans-serif;
+}
 #main-menu{
-  height:720px;
+  height:620px;
   width: 480px;
-  background-image: url('http://hd4wallpapers.net/wp-content/uploads/2016/01/Space-Wallpaper-Hd-Portrait.jpg');
+  background-image: url('../images/space.gif');
   background-size: cover;
   z-index: -1;
   margin: 0px auto;
   color: white;
 }
 
+
 #how-to-play{
-  height:720px;
+  height:620px;
   width: 480px;
-  background-image: url('http://hd4wallpapers.net/wp-content/uploads/2016/01/Space-Wallpaper-Hd-Portrait.jpg');
+  background-image: url('../images/space.gif');
   background-size: cover;
   margin: auto;
   color: white;
   text-align: center;
 }
 
-#how-to-play img{
+#how-to-play #audio-on2{
+  margin-right: 450px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#how-to-play #audio-off2{
+  margin-right: 450px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#play1{
   border: 1px solid white;
   height: 300px;
 }
@@ -75,6 +91,71 @@
   color:orange;
 }
 
+#audio-on{
+  cursor: pointer;
+  z-index: 2;
+}
+
+#audio-off{
+  cursor: pointer;
+  z-index: 2;
+}
+
+#back{
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+#game-over-wrapper{
+  height:620px;
+  width: 480px;
+  background-image: url('../images/space.gif');
+  background-size: cover;
+  z-index: -1;
+  margin: 0px auto;
+  color: white;
+  text-align: center;
+}
+
+
+#game-over-wrapper h2{
+  text-align: center;
+  font-size: 60px;
+  font-family: sans-serif;
+  margin-top: 0px;
+}
+
+#game-over-wrapper p{
+  font-size: 24px;
+}
+
+#game-over li{
+  list-style: none;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+#restart{
+  cursor: pointer;
+}
+
+#restart:hover{
+  color:orange;
+}
+
+#back-to-home{
+  cursor:pointer;
+  font-size: 24px;
+}
+
+#back-to-home:hover{
+  color: orange;
+  font-size: 24px;
+}
+
+.game-over-buttons{
+  margin-top: 250px;
+}
 
 
 .new-wrapper{
