@@ -5,8 +5,6 @@
 body{
   background-image: url("../images/pagebg.jpg");
   background-size: cover;
-  display: flex;
-  justify-content: center;
 }
 #main-menu{
   height:620px;
@@ -20,18 +18,18 @@ body{
 }
 
 .menus-wrapper{
-  margin-left: 30%;
+  position: absolute;
+  left:0;
+  right:0;
+  margin: 0 auto;
 }
 
 
-
 .controls-wrapper{
-  text-align: right;
-  float: right;
   color: white;
   z-index: 2;
-  display: inline;
-  padding-left: 10px;
+  float: right;
+  margin-right: 50px;
 }
 
 .controls{
