@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
     <title>ctype</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="keymaster.js"></script>
@@ -10,15 +11,18 @@
     </script>
   </head>
   <body>
+    <div class='menus-wrapper'>
     <audio id='bg-music' src='../sounds/bg-music.mp3' loop=true autoplay></audio>
-    <div id='main-menu'>
-      <h1>CTYPE</h1>
-      <div class='new-wrapper'>
-      <span id="new-game">New Game</span>
-      <p id="instructions">How to Play</p>
+    <div class='main-menu-wrapper'>
+      <div id='main-menu'>
+        <h1>CTYPE</h1>
+        <div class='new-wrapper'>
+        <span id="new-game">New Game</span>
+        <p id="instructions">How to Play</p>
+        </div>
+        <img id='audio-on' src="../sprites/audioOn.png"/>
+        <img id='audio-off' src="../sprites/audioOff.png" style="display:none"/>
       </div>
-      <img id='audio-on' src="../sprites/audioOn.png"/>
-      <img id='audio-off' src="../sprites/audioOff.png" style="display:none"/>
     </div>
     <div id='how-to-play' style="display:none">
       <h2> How to Play</h2>
@@ -69,6 +73,19 @@
     </p>
     <br/>
   </div>
+  </div>
+  </div>
+  <div class="controls-wrapper">
+    <div class="controls">
+    <h2>Controls</h2>
+    <p>
+      <br/>
+      Type the words to shoot the asteroids
+    </p>
+    <p>
+      Press Enter to use an EMP
+    </p>
+    </div>
   </div>
   </body>
 </html>

@@ -1,10 +1,12 @@
 *{
-  font-family: sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 body{
   background-image: url("../images/pagebg.jpg");
   background-size: cover;
+  display: flex;
+  justify-content: space-around;
 }
 #main-menu{
   height:620px;
@@ -14,6 +16,25 @@ body{
   z-index: -1;
   margin: 0px auto;
   color: white;
+
+}
+
+.menus-wrapper{
+  margin-left: 30%;
+}
+
+
+
+.controls-wrapper{
+  text-align: right;
+  float: right;
+  color: white;
+  z-index: 2;
+  display: inline;
+}
+
+.controls{
+  text-align: center;
 }
 
 
@@ -69,8 +90,7 @@ body{
 
 #main-menu h1{
   text-align: center;
-  font-size: 140px;
-  font-family: sans-serif;
+  font-size: 100px;
   margin-top: 0px;
 }
 
@@ -126,7 +146,6 @@ body{
 #game-over-wrapper h2{
   text-align: center;
   font-size: 60px;
-  font-family: sans-serif;
   margin-top: 0px;
 }
 
