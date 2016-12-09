@@ -39,6 +39,10 @@ body{
   text-align: center;
 }
 
+.controls span{
+  font-weight: bold;
+}
+
 
 #how-to-play{
   height:620px;
